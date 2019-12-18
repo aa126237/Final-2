@@ -79,5 +79,20 @@
   <ItemGroup>
     <None Include="Resources\Mario.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\FloorTile1.jpg" />
+    <Content Include="Resources\StandingEast1.png" />
+    <Content Include="Resources\StandingNorth1.png" />
+    <Content Include="Resources\StandingSouth1.png" />
+    <Content Include="Resources\StandingWest1.png" />
+    <Content Include="Resources\WalkingEast1.png" />
+    <Content Include="Resources\WalkingEast2.png" />
+    <Content Include="Resources\WalkingNorth1.png" />
+    <Content Include="Resources\WalkingNorth2.png" />
+    <Content Include="Resources\WalkingSouth.png" />
+    <Content Include="Resources\WalkingSouth2.png" />
+    <Content Include="Resources\WalkingWest1.png" />
+    <Content Include="Resources\WalkingWest2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

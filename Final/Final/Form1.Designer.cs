@@ -30,40 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(The_Form));
-            this.pb_Ground = new System.Windows.Forms.PictureBox();
-            this.pb_Player = new System.Windows.Forms.PictureBox();
-            this.tmr_Gravity = new System.Windows.Forms.Timer(this.components);
             this.tmr_Up = new System.Windows.Forms.Timer(this.components);
             this.tmr_Right = new System.Windows.Forms.Timer(this.components);
             this.tmr_Left = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Ground)).BeginInit();
+            this.pb_Player = new System.Windows.Forms.PictureBox();
+            this.tmr_Down = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pb_Ground
-            // 
-            this.pb_Ground.BackColor = System.Drawing.Color.Green;
-            this.pb_Ground.Location = new System.Drawing.Point(-8, 409);
-            this.pb_Ground.Name = "pb_Ground";
-            this.pb_Ground.Size = new System.Drawing.Size(806, 62);
-            this.pb_Ground.TabIndex = 0;
-            this.pb_Ground.TabStop = false;
-            // 
-            // pb_Player
-            // 
-            this.pb_Player.BackColor = System.Drawing.Color.Transparent;
-            this.pb_Player.Image = ((System.Drawing.Image)(resources.GetObject("pb_Player.Image")));
-            this.pb_Player.Location = new System.Drawing.Point(180, 158);
-            this.pb_Player.Name = "pb_Player";
-            this.pb_Player.Size = new System.Drawing.Size(176, 209);
-            this.pb_Player.TabIndex = 1;
-            this.pb_Player.TabStop = false;
-            // 
-            // tmr_Gravity
-            // 
-            this.tmr_Gravity.Enabled = true;
-            this.tmr_Gravity.Interval = 10;
-            this.tmr_Gravity.Tick += new System.EventHandler(this.tmr_Gravity_Tick);
             // 
             // tmr_Up
             // 
@@ -80,32 +57,69 @@
             this.tmr_Left.Interval = 10;
             this.tmr_Left.Tick += new System.EventHandler(this.tmr_Left_Tick);
             // 
+            // pb_Player
+            // 
+            this.pb_Player.BackColor = System.Drawing.Color.Transparent;
+            this.pb_Player.Image = ((System.Drawing.Image)(resources.GetObject("pb_Player.Image")));
+            this.pb_Player.Location = new System.Drawing.Point(286, 226);
+            this.pb_Player.Name = "pb_Player";
+            this.pb_Player.Size = new System.Drawing.Size(31, 40);
+            this.pb_Player.TabIndex = 401;
+            this.pb_Player.TabStop = false;
+            // 
+            // tmr_Down
+            // 
+            this.tmr_Down.Interval = 10;
+            this.tmr_Down.Tick += new System.EventHandler(this.tmr_Down_Tick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 318);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(19, 128);
+            this.pictureBox1.TabIndex = 402;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(-2, -1);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(19, 323);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 403;
+            this.pictureBox2.TabStop = false;
+            // 
             // The_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.ClientSize = new System.Drawing.Size(784, 462);
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(575, 444);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pb_Player);
-            this.Controls.Add(this.pb_Ground);
             this.Name = "The_Form";
             this.Text = "Game";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.The_Form_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.The_Form_KeyUp);
-            ((System.ComponentModel.ISupportInitialize)(this.pb_Ground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pb_Ground;
-        private System.Windows.Forms.PictureBox pb_Player;
-        private System.Windows.Forms.Timer tmr_Gravity;
         private System.Windows.Forms.Timer tmr_Up;
         private System.Windows.Forms.Timer tmr_Right;
         private System.Windows.Forms.Timer tmr_Left;
+        private System.Windows.Forms.PictureBox pb_Player;
+        private System.Windows.Forms.Timer tmr_Down;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

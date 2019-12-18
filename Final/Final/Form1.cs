@@ -13,35 +13,25 @@ namespace Final
     public partial class The_Form : Form
     {
 
-        bool isJumping = false;
-
         public The_Form()
         {
             InitializeComponent();
         }
 
-        private void tmr_Gravity_Tick(object sender, EventArgs e)
-        {
-            if(!pb_Player.Bounds.IntersectsWith(pb_Ground.Bounds) && isJumping == false)
-            {
-                pb_Player.Top += 10;
-            }
-        }
-
         private void tmr_Up_Tick(object sender, EventArgs e)
         {
-            pb_Player.Top -= 10;
-            isJumping = true;
+            pb_Player.Top -= 3;
         }
+
 
         private void tmr_Right_Tick(object sender, EventArgs e)
         {
-            pb_Player.Left += 10;
+            pb_Player.Left += 3;
         }
 
         private void tmr_Left_Tick(object sender, EventArgs e)
         {
-            pb_Player.Left -= 10;
+            pb_Player.Left -= 3;
         }
 
         private void The_Form_KeyDown(object sender, KeyEventArgs e)
@@ -58,6 +48,10 @@ namespace Final
             {
                 tmr_Left.Start();
             }
+            else if(e.KeyCode == Keys.Down)
+            {
+                tmr_Down.Start();
+            }
         }
 
         private void The_Form_KeyUp(object sender, KeyEventArgs e)
@@ -65,7 +59,6 @@ namespace Final
             if (e.KeyCode == Keys.Up)
             {
                 tmr_Up.Stop();
-                isJumping = false;
             }
             else if (e.KeyCode == Keys.Right)
             {
@@ -75,6 +68,15 @@ namespace Final
             {
                 tmr_Left.Stop();
             }
+            else if (e.KeyCode == Keys.Down)
+            {
+                tmr_Down.Stop();
+            }
+        }
+
+        private void tmr_Down_Tick(object sender, EventArgs e)
+        {
+            pb_Player.Top += 3;
         }
     }
 }
