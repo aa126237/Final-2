@@ -35,11 +35,9 @@
             this.tmr_Left = new System.Windows.Forms.Timer(this.components);
             this.pb_Player = new System.Windows.Forms.PictureBox();
             this.tmr_Down = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pb_leftWall = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_leftWall)).BeginInit();
             this.SuspendLayout();
             // 
             // tmr_Up
@@ -72,24 +70,16 @@
             this.tmr_Down.Interval = 10;
             this.tmr_Down.Tick += new System.EventHandler(this.tmr_Down_Tick);
             // 
-            // pictureBox1
+            // pb_leftWall
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-2, 318);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(19, 128);
-            this.pictureBox1.TabIndex = 402;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-2, -1);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(19, 323);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 403;
-            this.pictureBox2.TabStop = false;
+            this.pb_leftWall.BackColor = System.Drawing.Color.Transparent;
+            this.pb_leftWall.Image = ((System.Drawing.Image)(resources.GetObject("pb_leftWall.Image")));
+            this.pb_leftWall.Location = new System.Drawing.Point(0, -2);
+            this.pb_leftWall.Name = "pb_leftWall";
+            this.pb_leftWall.Size = new System.Drawing.Size(20, 447);
+            this.pb_leftWall.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_leftWall.TabIndex = 402;
+            this.pb_leftWall.TabStop = false;
             // 
             // The_Form
             // 
@@ -98,16 +88,14 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(575, 444);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pb_leftWall);
             this.Controls.Add(this.pb_Player);
             this.Name = "The_Form";
             this.Text = "Game";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.The_Form_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.The_Form_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_leftWall)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -118,8 +106,7 @@
         private System.Windows.Forms.Timer tmr_Left;
         private System.Windows.Forms.PictureBox pb_Player;
         private System.Windows.Forms.Timer tmr_Down;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pb_leftWall;
     }
 }
 

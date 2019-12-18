@@ -31,7 +31,10 @@ namespace Final
 
         private void tmr_Left_Tick(object sender, EventArgs e)
         {
-            pb_Player.Left -= 3;
+            if (!pb_Player.Bounds.IntersectsWith(pb_leftWall.Bounds))
+            {
+                pb_Player.Left -= 3;
+            }
         }
 
         private void The_Form_KeyDown(object sender, KeyEventArgs e)
