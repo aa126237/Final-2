@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(The_Form));
             this.pb_Ground = new System.Windows.Forms.PictureBox();
             this.pb_Player = new System.Windows.Forms.PictureBox();
             this.tmr_Gravity = new System.Windows.Forms.Timer(this.components);
@@ -50,10 +51,11 @@
             // 
             // pb_Player
             // 
-            this.pb_Player.BackColor = System.Drawing.Color.Red;
-            this.pb_Player.Location = new System.Drawing.Point(354, 181);
+            this.pb_Player.BackColor = System.Drawing.Color.Transparent;
+            this.pb_Player.Image = ((System.Drawing.Image)(resources.GetObject("pb_Player.Image")));
+            this.pb_Player.Location = new System.Drawing.Point(180, 158);
             this.pb_Player.Name = "pb_Player";
-            this.pb_Player.Size = new System.Drawing.Size(51, 50);
+            this.pb_Player.Size = new System.Drawing.Size(176, 209);
             this.pb_Player.TabIndex = 1;
             this.pb_Player.TabStop = false;
             // 
