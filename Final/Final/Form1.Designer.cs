@@ -67,7 +67,7 @@
             this.pb_Player.Image = ((System.Drawing.Image)(resources.GetObject("pb_Player.Image")));
             this.pb_Player.Location = new System.Drawing.Point(286, 226);
             this.pb_Player.Name = "pb_Player";
-            this.pb_Player.Size = new System.Drawing.Size(31, 40);
+            this.pb_Player.Size = new System.Drawing.Size(28, 40);
             this.pb_Player.TabIndex = 401;
             this.pb_Player.TabStop = false;
             // 
