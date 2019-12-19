@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Player.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,10 +76,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\mario.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Mario.gif" />
+    <Content Include="Resources\FloorTile1.jpg" />
+    <Content Include="Resources\StandingEast1.png" />
+    <Content Include="Resources\StandingNorth1.png" />
+    <Content Include="Resources\StandingSouth1.png" />
+    <Content Include="Resources\StandingWest1.png" />
+    <Content Include="Resources\WalkingEast1.png" />
+    <Content Include="Resources\WalkingEast2.png" />
+    <Content Include="Resources\WalkingNorth1.png" />
+    <Content Include="Resources\WalkingNorth2.png" />
+    <Content Include="Resources\WalkingSouth.png" />
+    <Content Include="Resources\WalkingSouth2.png" />
+    <Content Include="Resources\WalkingWest1.png" />
+    <Content Include="Resources\WalkingWest2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
