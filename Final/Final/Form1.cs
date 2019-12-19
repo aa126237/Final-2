@@ -26,6 +26,13 @@ namespace Final
             }
         }
 
+        private void tmr_Down_Tick(object sender, EventArgs e)
+        {
+            if (!pb_Player.Bounds.IntersectsWith(pb_bottomeWall.Bounds))
+            {
+                pb_Player.Top += 3;
+            }
+        }
 
         private void tmr_Right_Tick(object sender, EventArgs e)
         {
@@ -80,14 +87,6 @@ namespace Final
             else if (e.KeyCode == Keys.Down)
             {
                 tmr_Down.Stop();
-            }
-        }
-
-        private void tmr_Down_Tick(object sender, EventArgs e)
-        {
-            if (!pb_Player.Bounds.IntersectsWith(pb_bottomeWall.Bounds))
-            {
-                pb_Player.Top += 3;
             }
         }
     }
