@@ -20,13 +20,26 @@ namespace Final
 
         private void tmr_Up_Tick(object sender, EventArgs e)
         {
-            pb_Player.Top -= 3;
+            if (!pb_Player.Bounds.IntersectsWith(pb_topWall.Bounds))
+            {
+                pb_Player.Top -= 3;
+            }
         }
 
+        private void tmr_Down_Tick(object sender, EventArgs e)
+        {
+            if (!pb_Player.Bounds.IntersectsWith(pb_bottomeWall.Bounds))
+            {
+                pb_Player.Top += 3;
+            }
+        }
 
         private void tmr_Right_Tick(object sender, EventArgs e)
         {
-            pb_Player.Left += 3;
+            if (!pb_Player.Bounds.IntersectsWith(pb_rightWall.Bounds))
+            {
+                pb_Player.Left += 3;
+            }
         }
 
         private void tmr_Left_Tick(object sender, EventArgs e)
@@ -75,11 +88,6 @@ namespace Final
             {
                 tmr_Down.Stop();
             }
-        }
-
-        private void tmr_Down_Tick(object sender, EventArgs e)
-        {
-            pb_Player.Top += 3;
         }
     }
 }
