@@ -22,7 +22,7 @@ namespace Final
         {
             if (!pb_Player.Bounds.IntersectsWith(pb_topWall.Bounds))
             {
-                pb_Player.Top -= 3;
+                pb_Player.Top -= Player.playerMoveSpeed;
             }
         }
 
@@ -30,7 +30,7 @@ namespace Final
         {
             if (!pb_Player.Bounds.IntersectsWith(pb_bottomeWall.Bounds))
             {
-                pb_Player.Top += 3;
+                pb_Player.Top += Player.playerMoveSpeed;
             }
         }
 
@@ -38,7 +38,7 @@ namespace Final
         {
             if (!pb_Player.Bounds.IntersectsWith(pb_rightWall.Bounds))
             {
-                pb_Player.Left += 3;
+                pb_Player.Left += Player.playerMoveSpeed;
             }
         }
 
@@ -46,7 +46,7 @@ namespace Final
         {
             if (!pb_Player.Bounds.IntersectsWith(pb_leftWall.Bounds))
             {
-                pb_Player.Left -= 3;
+                pb_Player.Left -= Player.playerMoveSpeed;
             }
         }
 
