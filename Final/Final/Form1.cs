@@ -89,5 +89,17 @@ namespace Final
                 tmr_Down.Stop();
             }
         }
+
+        private void The_Form_Load(object sender, EventArgs e)
+        {
+            var enemy1 = new PictureBox
+            {
+                Name = "enemy",
+                Size = new Size(30, 40),
+                Location = new Point(100, 100),
+                Image = Image.FromFile("Demon.png"),
+            };
+            this.Controls.Add(enemy1);
+        }
     }
 }

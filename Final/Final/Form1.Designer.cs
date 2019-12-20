@@ -134,6 +134,7 @@
             this.Controls.Add(this.pb_Player);
             this.Name = "The_Form";
             this.Text = "Game";
+            this.Load += new System.EventHandler(this.The_Form_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.The_Form_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.The_Form_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).EndInit();
