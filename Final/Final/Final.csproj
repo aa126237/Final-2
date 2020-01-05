@@ -83,19 +83,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Demon.png" />
-    <Content Include="Resources\FloorTile1.jpg" />
-    <Content Include="Resources\StandingEast1.png" />
-    <Content Include="Resources\StandingNorth1.png" />
-    <Content Include="Resources\StandingSouth1.png" />
-    <Content Include="Resources\StandingWest1.png" />
-    <Content Include="Resources\WalkingEast1.png" />
-    <Content Include="Resources\WalkingEast2.png" />
-    <Content Include="Resources\WalkingNorth1.png" />
-    <Content Include="Resources\WalkingNorth2.png" />
-    <Content Include="Resources\WalkingSouth.png" />
-    <Content Include="Resources\WalkingSouth2.png" />
-    <Content Include="Resources\WalkingWest1.png" />
-    <Content Include="Resources\WalkingWest2.png" />
+    <None Include="Resources\FloorTile1.jpg" />
+    <None Include="Resources\FrontWall1.png" />
+    <None Include="Resources\SideWall1.png" />
+    <None Include="Resources\StandingEast1.png" />
+    <None Include="Resources\StandingSouth1.png" />
+    <None Include="Resources\StandingNorth1.png" />
+    <None Include="Resources\StandingWest1.png" />
+    <None Include="Resources\WalkingEast2.png" />
+    <None Include="Resources\WalkingNorth1.png" />
+    <None Include="Resources\WalkingNorth2.png" />
+    <None Include="Resources\WalkingEast1.png" />
+    <None Include="Resources\WalkingSouth.png" />
+    <None Include="Resources\WalkingSouth2.png" />
+    <None Include="Resources\WalkingWest1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WalkingWest2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

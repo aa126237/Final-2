@@ -73,13 +73,13 @@ namespace Final
 
         private void The_Form_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Up)
+            if (e.KeyCode == Keys.Up)
                 tmr_Up.Start();
             else if (e.KeyCode == Keys.Right)
                 tmr_Right.Start();
             else if (e.KeyCode == Keys.Left)
                 tmr_Left.Start();
-            else if(e.KeyCode == Keys.Down)
+            else if (e.KeyCode == Keys.Down)
                 tmr_Down.Start();
         }
         
