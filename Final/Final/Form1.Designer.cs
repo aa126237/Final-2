@@ -39,6 +39,8 @@
             this.pb_rightWall = new System.Windows.Forms.PictureBox();
             this.pb_bottomeWall = new System.Windows.Forms.PictureBox();
             this.pb_topWall = new System.Windows.Forms.PictureBox();
+            this.lbl_health = new System.Windows.Forms.Label();
+            this.tmr_EnemySpawn = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_leftWall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_rightWall)).BeginInit();
@@ -64,10 +66,10 @@
             // pb_Player
             // 
             this.pb_Player.BackColor = System.Drawing.Color.Transparent;
-            this.pb_Player.Image = ((System.Drawing.Image)(resources.GetObject("pb_Player.Image")));
+            this.pb_Player.Image = global::Final.Properties.Resources.StandingSouth1;
             this.pb_Player.Location = new System.Drawing.Point(286, 226);
             this.pb_Player.Name = "pb_Player";
-            this.pb_Player.Size = new System.Drawing.Size(31, 40);
+            this.pb_Player.Size = new System.Drawing.Size(28, 40);
             this.pb_Player.TabIndex = 401;
             this.pb_Player.TabStop = false;
             // 
@@ -120,6 +122,17 @@
             this.pb_topWall.TabIndex = 406;
             this.pb_topWall.TabStop = false;
             // 
+            // lbl_health
+            // 
+            this.lbl_health.Location = new System.Drawing.Point(355, 100);
+            this.lbl_health.Name = "lbl_health";
+            this.lbl_health.Size = new System.Drawing.Size(100, 23);
+            this.lbl_health.TabIndex = 407;
+            // 
+            // tmr_EnemySpawn
+            // 
+            this.tmr_EnemySpawn.Tick += new System.EventHandler(this.tmr_EnemySpawn_Tick);
+            // 
             // The_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -127,6 +140,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(575, 444);
+            this.Controls.Add(this.lbl_health);
             this.Controls.Add(this.pb_topWall);
             this.Controls.Add(this.pb_bottomeWall);
             this.Controls.Add(this.pb_rightWall);
@@ -134,6 +148,7 @@
             this.Controls.Add(this.pb_Player);
             this.Name = "The_Form";
             this.Text = "Game";
+            this.Load += new System.EventHandler(this.The_Form_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.The_Form_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.The_Form_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).EndInit();
@@ -155,6 +170,8 @@
         private System.Windows.Forms.PictureBox pb_rightWall;
         private System.Windows.Forms.PictureBox pb_bottomeWall;
         private System.Windows.Forms.PictureBox pb_topWall;
+        private System.Windows.Forms.Label lbl_health;
+        private System.Windows.Forms.Timer tmr_EnemySpawn;
     }
 }
 
