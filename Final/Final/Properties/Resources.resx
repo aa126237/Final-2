@@ -118,4 +118,52 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Demon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Demon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FloorTile1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FloorTile1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FrontWall1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FrontWall1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SideWall1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SideWall1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StandingEast1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StandingEast1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StandingNorth1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StandingNorth1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StandingSouth1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StandingSouth1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StandingWest1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StandingWest1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WalkingEast1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WalkingEast1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WalkingEast2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WalkingEast2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WalkingNorth1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WalkingNorth1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WalkingNorth2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WalkingNorth2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WalkingSouth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WalkingSouth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WalkingSouth2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WalkingSouth2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WalkingWest1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WalkingWest1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WalkingWest2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WalkingWest2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
