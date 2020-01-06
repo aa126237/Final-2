@@ -40,6 +40,7 @@
             this.pb_bottomeWall = new System.Windows.Forms.PictureBox();
             this.pb_topWall = new System.Windows.Forms.PictureBox();
             this.lbl_health = new System.Windows.Forms.Label();
+            this.tmr_EnemySpawn = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pb_Player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_leftWall)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_rightWall)).BeginInit();
@@ -128,6 +129,10 @@
             this.lbl_health.Size = new System.Drawing.Size(100, 23);
             this.lbl_health.TabIndex = 407;
             // 
+            // tmr_EnemySpawn
+            // 
+            this.tmr_EnemySpawn.Tick += new System.EventHandler(this.tmr_EnemySpawn_Tick);
+            // 
             // The_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,6 +171,7 @@
         private System.Windows.Forms.PictureBox pb_bottomeWall;
         private System.Windows.Forms.PictureBox pb_topWall;
         private System.Windows.Forms.Label lbl_health;
+        private System.Windows.Forms.Timer tmr_EnemySpawn;
     }
 }
 

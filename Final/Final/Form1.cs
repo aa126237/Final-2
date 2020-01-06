@@ -94,5 +94,10 @@ namespace Final
             else if (e.KeyCode == Keys.Down)
                 tmr_Down.Stop();
         }
+
+        private void tmr_EnemySpawn_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }
