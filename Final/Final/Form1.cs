@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows;
 
 namespace Final
 {
@@ -18,25 +19,9 @@ namespace Final
             InitializeComponent();
         }
 
-        int health = 10;
-        string healthstr = "10";
-
         private void The_Form_Load(object sender, EventArgs e)
         {
-            var enemy1 = new PictureBox
-            {
-                Name = "enemy",
-                Size = new Size(51, 51),
-                Location = new Point(100, 100),
-                Image = Properties.Resources.Demon,
-                BackColor = Color.Transparent,
-            };
-            this.Controls.Add(enemy1);
-            if(pb_Player.Bounds.IntersectsWith(enemy1.Bounds))
-            {
-                healthstr = Convert.ToString(health);
-                lbl_health.Text = healthstr;
-            }
+            Enemy.summonEnemy();
         }
 
         private void tmr_Up_Tick(object sender, EventArgs e)

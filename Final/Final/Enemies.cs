@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace Final
 {
@@ -14,11 +18,11 @@ namespace Final
 
         public static void summonEnemy()
         {
-            enemies.Add(new Enemy(Convert.ToString(numberOfEnemies), 1 + (enemiesLevel / 4), 1, (enemiesLevel * 4) - 1));
+            enemies.Add(new Enemy(Convert.ToString(numberOfEnemies)));
         }
 
 
-        public Enemy(string enemyName, int enemyMovespeed, int enemydamage, int enemyHealth)
+        public Enemy(string enemyName)
         {
 
         }
